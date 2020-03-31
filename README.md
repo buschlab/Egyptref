@@ -7,6 +7,7 @@ This repository provides a description of workflow for analysing GWAS data. All 
 4. Association testing
 5. Regional clustering and plotting
 
+Note: In some cases, scripts, parameters and thresholds need to be adapted to consider certain data proporties.
 
 ## 1. QC of unimputed data
 **Script:** qc_unimputed.sh \
