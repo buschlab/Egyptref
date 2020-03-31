@@ -10,6 +10,6 @@ This repository provides a description of workflow for analysing GWAS data. All 
 
 ## 1. QC of unimputed data
 **Script:** qc_unimputed.sh \
-**Input data:** Seperate Plink files for cases and controls \
+**Input data:** Seperate Plink files for cases and controls with sex info and both family id and individual id set \
 **Required programs:** plink2.0, plink1.9, bcftools, Rscript with libraries qqman and data.table \
 **Annotation files:** reference genome (fasta)
