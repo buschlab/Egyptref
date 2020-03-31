@@ -13,3 +13,6 @@ This repository provides a description of workflow for analysing GWAS data. All 
 **Input data:** Seperate Plink files for cases and controls with sex info and both family id and individual id set \
 **Required programs:** plink2.0, plink1.9, bcftools, python3.7, Rscript with libraries qqman and data.table \
 **Annotation files:** reference genome (fasta)
+
+
+## 2. Imputation
