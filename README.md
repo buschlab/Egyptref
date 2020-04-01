@@ -13,7 +13,7 @@ Note: In some cases, scripts, parameters and thresholds need to be adapted to co
 **Script:** qc_unimputed.sh \
 **Input data:** Seperate Plink files for cases and controls with sex info and both family id and individual id set \
 **Required programs:** plink2.0, plink1.9, bcftools, python3.7, Rscript with libraries qqman and data.table \
-**Annotation files:** reference genome (fasta)
+**Annotation files:** reference genome (fasta), allele frequency file
 
 
 ## 2. Imputation
@@ -22,3 +22,12 @@ For imputation I recommend the Sanger imputation server (free of charge) at http
 
 ## 3. QC of imputed data
 **Script:** qc_imputed.sh \
+**Input data:** Input files (*.vcf.gz) from Sanger imputation server.
+**Required programs:** bcftools
+**Annotation files:** allele frequency file
+
+
+## 4. Association testing
+**Script:** assoc_tests.sh \
+**Input data:** Genotypes and sample information in .gen/.sample format (final output of step 3) \
+**Required programs:** snptest
