@@ -17,7 +17,8 @@ Note: In some cases, scripts, parameters and thresholds need to be adapted to co
 
 
 ## 2. Imputation
-For imputation I recommend the Sanger imputation server (free of charge) at https://imputation.sanger.ac.uk/. Either select "pre-phase with EAGLE2 and impute" or "pre-phase with SHAPEIT2 and impute" and upload the final VCF files from step 1.
+For imputation I recommend the Sanger imputation server (free of charge) at https://imputation.sanger.ac.uk/. Either select "pre-phase with EAGLE2 and impute" or "pre-phase with SHAPEIT2 and impute" and upload the final VCF files from step 1. After successfull imputation download the VCF files.
 
 
 ## 3. QC of imputed data
+**Script:** qc_imputed.sh \
