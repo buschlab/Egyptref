@@ -1,6 +1,6 @@
 #!/bin/bash
 
-path="/matthias/2019-08-12_-_GWAS_pemphigus_vulgaris/imputed/snptest_v2"
+path="..."
 
 #~/workspace/gwas/snptest/excl_all_position_duplicates.pl dups.txt ../cases_1000GP3/gen/*.gen.gz ../controls_1000GP3/gen/*.gen.gz
 
@@ -37,10 +37,3 @@ mkdir results
 
 
 ~/workspace/toolbox/file_tools/concat.pl $path/results/snptest.all.txt 1 $path/results/snptest.chr*.txt
-
-results/process.sh
-
-
-#cat ~/workspace/gwas/snptest/manhattan_hg19.R | R --slave --args $path/results/snptest.all.txt $path/results/snptest.png 0.0001 0.05
-#cat ~/workspace/gwas/snptest/manhattan_hg19.R | R --slave --args $path/results/snptest.all.txt $path/results/snptest2.png 0.001 0.05
-#cat ~/workspace/gwas/snptest/manhattan_hg19.R | R --slave --args $path/results/snptest.all.txt $path/results/snptest3.png 0.0001 0.08
