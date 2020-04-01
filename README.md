@@ -4,7 +4,7 @@ This repository provides a description of workflow for analysing GWAS data. All 
 1. QC of unimputed data
 2. Imputation
 3. QC of imputed data
-4. Association testing
+4. Association testing & filtering
 5. Regional clustering and plotting
 
 Note: In some cases, scripts, parameters and thresholds need to be adapted to consider certain data proporties.
@@ -27,7 +27,7 @@ For imputation I recommend the Sanger imputation server (free of charge) at http
 **Annotation files:** allele frequency file
 
 
-## 4. Association testing
+## 4. Association testing & filtering
 **Script:** assoc_tests.sh \
 **Input data:** Genotypes and sample information in .gen/.sample format (final output of step 3) \
 **Required programs:** snptest
